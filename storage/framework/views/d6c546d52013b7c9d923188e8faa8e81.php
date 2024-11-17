@@ -13,7 +13,7 @@
             <img src="assets/img/Ori.jpg" class="img-fluid" width="500" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3><?php echo e($about->title); ?></h3>
+            <h3>About</h3>
             <p class="fst-italic">
               I study at the Sambas State Polytechnic (Poltesa) majoring in information management, information management study program
             </p>

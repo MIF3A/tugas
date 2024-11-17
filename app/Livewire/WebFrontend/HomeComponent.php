@@ -10,7 +10,6 @@ class HomeComponent extends Component
 {
     public function render()
     {
-        $about=About::first();
-        return view('livewire.web-frontend.home-component',['about'=>$about])->layout("layouts.base");
+        return view('livewire.web-frontend.home-component')->layout("layouts.base");
     }
 }
