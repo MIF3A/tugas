@@ -8,7 +8,6 @@
           <h2>About</h2>
           <p>I am Uray Naufal Arisandi, I like coding and programming</p>
         </div>
-        <!--[if BLOCK]><![endif]--><?php if($about): ?>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
             <img src="assets/img/Ori.jpg" class="img-fluid" width="500" alt="">
@@ -21,18 +20,18 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span><?php echo e($about->dob); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><?php echo e($about->website); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><?php echo e($about->phone); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span><?php echo e($about->city); ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>05-01-2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>uraynaufalhh@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 896-9476-1427</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Jakarta</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span><?php echo e($about->age); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span><?php echo e($about->degree); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span><?php echo e($about->email); ?></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span><?php echo e($about->profession); ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19 Years Old</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Collage</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>64720sj3</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Web Dev</span></li>
                 </ul>
               </div>
             </div>
@@ -41,40 +40,6 @@
             </p>
           </div>
         </div>
-        <?php else: ?>
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/Ori.jpg" class="img-fluid" width="500" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              I study at the Sambas State Polytechnic (Poltesa) majoring in information management, information management study program
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.uraynaufal.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>sambas, indonesia</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>uraynaufal@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              I'm currently a freelancer and if you are interested, you can contact me, I can do anything 
-            </p>
-          </div>
-        </div>
-        <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
       </div>
     </section><!-- End About Section -->
@@ -172,38 +137,7 @@
             
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $skills2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $skill): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
 
-            <div class="progress">
-              <span class="skill"><?php echo e($skill->name); ?> <i class="val"><?php echo e($skill->percentage); ?></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="<?php echo e($skill->percentage); ?>" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-          </div>
 
         </div>
 
