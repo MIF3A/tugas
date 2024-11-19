@@ -13,6 +13,6 @@ class HeroComponent extends Component
 
 
         // Kirimkan data hero ke view
-        return view('livewire.web-frontend.ui.hero-component', ['hero' => $hero]);
+        return view('livewire.web-frontend.ui.hero-component');
     }
 }
